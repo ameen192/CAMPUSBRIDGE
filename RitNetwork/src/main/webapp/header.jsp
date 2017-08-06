@@ -61,7 +61,6 @@
 						  <li class="nav-item"><a class="nav-link" href="activities.jsp">Activities</a></li>
 						  <li class="nav-item"><a class="nav-link" href="fetchRequests">Requests</a></li>
 						  <li class="nav-item"><a class="nav-link" href="fetchQnA">QnA</a></li>
-						  <li class="nav-item"><a class="nav-link" href="placement.jsp">Placement</a></li>
 						  <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
 				</ul>
 			</nav>
