@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+        <property name="connection.url">jdbc:mysql://localhost/sample</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password">dinga</property>  
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property> 
+        <property name="show_sql">true</property> 
+    <mapping class="edu.campus.dto.Student"/>  
+    <mapping class="edu.campus.dto.Faculty"/> 
+    <mapping class="edu.campus.dto.Questions"/>  
+    <mapping class="edu.campus.dto.Q_answers"/>
+    <mapping class="edu.campus.dto.NoticeBoard"/>
+    <mapping class="edu.campus.dto.Activities"/>
+    <mapping class="edu.campus.dto.Requests"/>
+    <mapping class="edu.campus.dto.Response"/>
+    <mapping class="edu.campus.dto.ActPoll"/>
+    </session-factory>  
+  
+</hibernate-configuration>  
