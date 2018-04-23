@@ -1,0 +1,29 @@
+{% extends "recovery/layout.html" %}
+
+{% block content %}
+
+
+<table style="border: 1px solid red;">
+	<tr>
+{% for field in fields %}
+    <th>{{field}}</th>
+    
+    {% endfor %}
+</tr>
+<!-- {{ fields }} -->
+
+{% for item in data %}
+
+  <tr>
+  	{% for i in item %}
+    <td>{{i}}</td>
+    
+    {% endfor %}
+  </tr>
+
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

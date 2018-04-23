@@ -1,0 +1,11 @@
+{% extends "recovery/layout.html" %}
+
+{% block content %}
+
+<form action="/recovery/afterlogin" method="POST">
+<input type="text" name="name" placeholder="username"><br><br>
+<input type="password" name="pass" placeholder="password"><br><br>
+<input type="submit">
+</form>
+
+{% endblock %}

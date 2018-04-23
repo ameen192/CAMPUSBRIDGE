@@ -1,0 +1,14 @@
+{% extends "recovery/layout.html" %}
+
+{% block content %}
+
+<form action="/recovery/csv_upload" method="POST">
+
+<input type="radio" name="csvtype" value="servers" checked>servers_csv<br>
+<input type="radio" name="csvtype" value="users">users_csv<br>
+<input type="file" name="myfile">
+<input type="submit">
+
+</form>
+
+{% endblock %}

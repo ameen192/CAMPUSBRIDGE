@@ -1,0 +1,27 @@
+{% extends "recovery/layout.html" %}
+{% block content %}
+<h3>Enter server details</h3>
+<!-- <form action="/recovery/get_server_input_form" method="POST">
+	
+	<input type="text" name="name" placeholder="enter server name">
+	<textarea rows="4" cols="50" placeholder="description"></textarea>
+	<select name="select_priority">
+	  <option value="0">0</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5">5</option>
+	</select>
+
+	<input type="submit"> -->
+
+	<form method="post" enctype="multipart/form-data" action="/recovery/file_upload">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+
+
+</form>
+{% endblock %}

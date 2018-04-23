@@ -1,0 +1,86 @@
+{% extends "recovery/layout.html" %}
+{% block content %}
+
+<a href="/recovery/login" style="float: right;margin-right: 300px">go to login</a>
+
+<table style="border: 1px solid black;">
+<tr>
+{% for field in fields %}
+    <th>{{field}}</th>    
+{% endfor %}
+</tr>
+{% for item in data %}
+  <tr>
+  	{% for i in item %}
+    <td>{{i}}</td>
+    {% endfor %}
+    <td><a href="/recovery/serverdetails">view details</a></td>
+  </tr>
+{% endfor %}
+</table>
+<br><br>
+<!-- <a href="/recovery/serverdetail">click here for server details</a> -->
+<br><br>
+<!-- second dashboard-->
+
+<table style="border: 1px solid black;">
+<tr>
+{% for field in statusfields %}
+    <th>{{field}}</th>    
+{% endfor %}
+</tr>
+<tr>
+	<td>
+		<ul>
+			{% for item in TODOdata %}
+			<li>{{item}}</li>
+			{% endfor %}
+		</ul>
+	</td>
+	<td>
+		<ul>
+			{% for item in OSdata %}
+			<li>{{item}}</li>
+			{% endfor %}
+		</ul>
+	</td>
+	<td>
+		<ul>
+			{% for item in BACKUPdata %}
+			<li>{{item}}</li>
+			{% endfor %}
+		</ul>
+	</td>
+	<td>
+		<ul>
+			{% for item in DATABASEdata %}
+			<li>{{item}}</li>
+			{% endfor %}
+		</ul>
+	</td>
+	<td>
+		<ul>
+			{% for item in APPLICATIONdata %}
+			<li>{{item}}</li>
+			{% endfor %}
+		</ul>
+	</td>
+	<td>
+		<ul>
+			{% for item in DONEdata %}
+			<li>{{item}}</li>
+			{% endfor %}
+		</ul>
+	</td>
+
+</tr>
+
+
+</table>
+
+
+
+
+
+
+{% endblock %}

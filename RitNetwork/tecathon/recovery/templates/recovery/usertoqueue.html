@@ -1,0 +1,14 @@
+{% extends "recovery/layout.html" %}
+
+{% block content %}
+
+<table style="width:100%">
+	
+{{ fields }}
+{% for item in data %}
+  <tr>
+    <td>{{item}}</td>    
+  </tr>
+{% endfor %}
+</table>
+{% endblock %}
